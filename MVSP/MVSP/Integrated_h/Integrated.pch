@@ -1,0 +1,25 @@
+//
+//  Integrated.pch
+//  ZFHelpsOne
+//
+//  Created by MacbookPro13 on 2017/7/14.
+//  Copyright © 2017年 MacbookPro13. All rights reserved.
+//
+
+#ifndef Integrated_pch
+#define Integrated_pch
+
+#ifdef __OBJC__
+
+
+#import "Color_Integrated.h"
+#import "Enum_Integrated.h"
+#import "General_Integrated.h"
+#import "Screen_Integrated.h"
+#import "Third_integrate.h"
+#import "Assist_Integrated.h"
+#import "Default_String.h"
+
+#endif
+
+#endif /* Integrated_pch */

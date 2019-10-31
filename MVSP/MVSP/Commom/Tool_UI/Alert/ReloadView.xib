@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReloadView">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="492"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TvI-Vr-QY1" userLabel="bgView">
+                    <rect key="frame" x="0.0" y="0.0" width="290" height="492"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waY-WM-SdK">
+                            <rect key="frame" x="85" y="156" width="120" height="180"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shibai-" translatesAutoresizingMaskIntoConstraints="NO" id="YX0-Qb-Rgy">
+                                    <rect key="frame" x="30.5" y="10" width="59" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="4oC-qo-Gc9"/>
+                                        <constraint firstAttribute="width" constant="59" id="xSi-Wk-WsL"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载失败" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwk-rG-x92">
+                                    <rect key="frame" x="12.5" y="85" width="95" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="95" id="cxf-ey-Wre"/>
+                                        <constraint firstAttribute="height" constant="21" id="wyN-3E-x3S"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dz-eS-e5g">
+                                    <rect key="frame" x="7.5" y="121" width="105" height="38"/>
+                                    <color key="backgroundColor" red="0.95686274509803915" green="0.3529411764705882" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="38" id="AGf-7s-AHK"/>
+                                        <constraint firstAttribute="width" constant="105" id="hrI-0R-PKZ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="点击重试"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="reloadBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="RnH-e5-bdZ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="kwk-rG-x92" firstAttribute="top" secondItem="YX0-Qb-Rgy" secondAttribute="bottom" constant="15" id="Ms3-kg-hCM"/>
+                                <constraint firstAttribute="height" constant="180" id="PDe-r3-PY6"/>
+                                <constraint firstItem="kwk-rG-x92" firstAttribute="centerX" secondItem="waY-WM-SdK" secondAttribute="centerX" id="YeZ-Kh-Jd9"/>
+                                <constraint firstItem="3dz-eS-e5g" firstAttribute="top" secondItem="kwk-rG-x92" secondAttribute="bottom" constant="15" id="ZkS-1C-1JI"/>
+                                <constraint firstItem="YX0-Qb-Rgy" firstAttribute="centerX" secondItem="waY-WM-SdK" secondAttribute="centerX" id="bLC-uP-vkN"/>
+                                <constraint firstItem="YX0-Qb-Rgy" firstAttribute="top" secondItem="waY-WM-SdK" secondAttribute="top" constant="10" id="ccG-kH-1vQ"/>
+                                <constraint firstAttribute="width" constant="120" id="kMO-LC-Jlp"/>
+                                <constraint firstItem="3dz-eS-e5g" firstAttribute="centerX" secondItem="waY-WM-SdK" secondAttribute="centerX" id="sC0-bS-mU4"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="waY-WM-SdK" firstAttribute="centerX" secondItem="TvI-Vr-QY1" secondAttribute="centerX" id="7o5-Gj-E2N"/>
+                        <constraint firstItem="waY-WM-SdK" firstAttribute="centerY" secondItem="TvI-Vr-QY1" secondAttribute="centerY" id="TGK-JS-1Tw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TvI-Vr-QY1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2zT-RK-tdc"/>
+                <constraint firstItem="TvI-Vr-QY1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Wuw-Ot-uVm"/>
+                <constraint firstAttribute="bottom" secondItem="TvI-Vr-QY1" secondAttribute="bottom" id="ZX0-N7-D1o"/>
+                <constraint firstAttribute="trailing" secondItem="TvI-Vr-QY1" secondAttribute="trailing" id="mk1-xh-zMT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="TvI-Vr-QY1" id="Yu6-ZQ-9kZ"/>
+                <outlet property="infoBtn" destination="3dz-eS-e5g" id="kSr-VE-zdX"/>
+                <outlet property="infoImageView" destination="YX0-Qb-Rgy" id="xRK-m8-qcb"/>
+                <outlet property="textLabel" destination="kwk-rG-x92" id="Mgx-Rt-7nD"/>
+            </connections>
+            <point key="canvasLocation" x="-28" y="171"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shibai-" width="97" height="92"/>
+    </resources>
+</document>
