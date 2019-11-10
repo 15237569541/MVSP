@@ -21,6 +21,7 @@
 - (IBAction)nextButtonClick:(id)sender {
     ZFWKWebViewController*Vc = [[ZFWKWebViewController alloc]init];
     [self.navigationController pushViewController:Vc animated:YES];
+    NSLog(@"122");
 }
 
 
