@@ -22,7 +22,11 @@
     ZFWKWebViewController*Vc = [[ZFWKWebViewController alloc]init];
     [self.navigationController pushViewController:Vc animated:YES];
     NSLog(@"122");
+    NSLog(@"1299999");
 }
+
+
+
 
 
 @end
